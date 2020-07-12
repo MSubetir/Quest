@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/index.js" defer></script>
+    <script src="init.js"></script>
+</head>
+
+<body>
+
+
+	<header>
+        <div class="principal" onclick="verify(1)"><img src="doc/primario.png"></div>
+        <div class="secundaria" onclick="verify(2)"><img src="doc/secundario.png"></div>
+		<div class="terciaria" onclick="verify(3)"><img src="doc/terciario.png"></div>
+		<div class="quartaria" onclick="verify(4)"><img src="doc/quartario.png"></div>
+		<div class="block"></div>
+	</header>
+
+
+	<main>
+		<ul class="lista">
+		</ul>	
+		
+		<div class="opcoes">
+			<div class="apagar" onclick="deleteItem()"> <img src="doc/ap.png"> </div>
+			<div class="editar" onclick="editItem()"> <img src="doc/ed.png"> </div>
+			<div class="adicionar" onclick="change()"> <img src="doc/ad.png"> </div>
+		</div>
+
+		<div class="yesAndNo">
+			<div onclick="no()" class="">X</div>
+			<div onclick="yes()" class="">Y</div>
+		</div>
+		<div class="createAndNo">
+			<div onclick="noCreate()" class="">X</div>
+			<div onclick="create()" class="">Y</div>
+		</div>
+
+		<div class="types">
+			<div onclick="changeBack()" class="">X</div>
+			<div class="text" onclick="addQuest(0)"><img src="doc/text.png"></div>
+			<div class="cont" onclick="addQuest(1)"><img src="doc/++.png"></div>
+			<div class="red" onclick="addQuest(2)"><img src="doc/--.png"></div>
+		</div>
+		
+	</main>
+	
+
+	<footer>
+		<div class="janela">
+			<div class="title2"></div>
+			<textarea value="" class="t1"></textarea>
+			<div class="pop-up">Clique sobre o título</div>
+		</div>
+		
+	</footer>
+</body>
+</html>

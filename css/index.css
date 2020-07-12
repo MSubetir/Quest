@@ -1,0 +1,237 @@
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-tap-highlight-color: transparent; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+body{
+    display: flex;
+    flex-direction: column;
+    --fundo: "";
+    background-image: var(--fundo);
+    background-size:100% 100%;
+    background-color: #1b1b1b;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+} 
+header div.block{
+    height: 15vh;
+    width: 100vw;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+}
+header > div{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%; 
+    height: 50%;
+    color: #FFFFFF;
+    font-family: monospace;
+
+    border: groove 0.9vw#ffffff;
+    background: #272727;
+}
+header > div > img{
+    display: flex;
+    height: 80%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+main ul{
+    height: 80%;	
+    width: 95%;
+    padding: 0;
+    overflow-y: scroll;
+    margin: auto;
+    padding-bottom: 1vh;
+}
+main ul > li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 8vw;
+    width: 91%;
+    height: 20%;
+    background-color: rgb(14, 14, 14);
+    color: #ffffff;
+    border: 0.3vw #272727 double;
+    margin-top: 2vw;
+    animation: light 1.3s infinite;
+    margin-left: 4vw;
+    
+
+}
+@keyframes light {
+	0% { box-shadow: 0 0em 0.2em #fff; } 
+	100% { box-shadow: 0 0em 0.1em #fff;  }
+}
+
+
+
+main div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15%;	
+    width: 85%;
+    background: #1b1b1b;
+    border: solid 1px #ffffff;
+    z-index: 1;
+    border-radius: 10px;
+}
+div.opcoes > div > img{
+    display: flex;
+    height: 70%;
+}
+div.yesAndNo, div.createAndNo{
+    height: 15%;
+    margin-top: -7.7vh;
+    background: #1b1b1b;
+    z-index: 0;
+    opacity: 0;
+}
+
+main div.yesAndNo div.no{
+    animation: click infinite 2.5s;
+    animation-delay: 1s;
+}
+main div.yesAndNo div.yes{
+    animation: click infinite 2.5s;
+}
+main div.types{
+    height: 15%;
+    margin-top: -7.7vh;
+    background: #1b1b1b;
+    z-index: 0;
+    opacity: 0;
+}
+
+
+main div > div{
+    height: 80%;
+    width: 15%;
+    background: #222222;
+    font-family: sans-serif;
+    font-size: 6vw;
+    color: #fff;
+    border-radius: 10px;
+}
+.effect{
+    animation: click linear 1s;
+}
+@keyframes click {
+	0% { background: #474747; } 
+	100% { background: #222222; }
+}
+li > img{
+    display: flex;
+    height: 7vh;
+    margin-left: 2vw;
+    margin-right: 5vw;
+}
+
+div.types > div > img{
+    display: flex;
+    height: 70%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+footer div.janela{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    background: rgb(14, 14, 14);
+    border: solid 1px #ffffff;
+    border-radius: 10px;
+}
+footer div.janela textarea.t1{
+    text-align: start;
+    height: 70%;
+    width: 85%;
+    font-family: sans-serif;
+    font-size: 4.3vw;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+    border: 0.5px solid #000000;
+    background: #000000;
+    padding: 1vh;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+div.pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(14, 14, 14);
+    z-index: 0;
+    position: absolute;
+    width: 85vw;
+    height: 31vh;
+    opacity: 0;
+
+    font-family: sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: rgb(194, 194, 194);
+    
+}
+.pop-animation{
+    animation: pop linear 6s;
+}
+
+@keyframes pop{
+    0% { opacity: 0;  } 
+    10% { opacity: 1;  } 
+    40% { opacity: 1;  } 
+    55% { opacity: 0; }
+    70% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+footer div.janela div.title2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF;
+    height: 15%;
+    width: 80%;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 6vw;
+    font-weight: bolder;
+    color: #fff;
+    
+}
+
+
+
+
+
